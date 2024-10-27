@@ -1,0 +1,13 @@
+{
+  "newFileLocation": "folder",
+  "newFileFolderPath": "Main notes",
+  "attachmentFolderPath": "Images",
+  "alwaysUpdateLinks": true,
+  "pdfExportSettings": {
+    "includeName": false,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
+}

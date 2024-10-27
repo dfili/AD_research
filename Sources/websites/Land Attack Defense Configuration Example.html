@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0063)https://www.hillstonenet.com/support/5.0/en/ad_sample_land.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Land Attack Defense Configuration Example</title>
+<link href="./Land Attack Defense Configuration Example_files/helpstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="./Land Attack Defense Configuration Example_files/whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="./Land Attack Defense Configuration Example_files/whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="./Land Attack Defense Configuration Example_files/whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="./Land Attack Defense Configuration Example_files/whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="./Land Attack Defense Configuration Example_files/whlang.js"></script>
+<script type="text/javascript" language="javascript1.2" src="./Land Attack Defense Configuration Example_files/whtopic.js"></script>
+
+ <meta name="generator" content="Adobe RoboHelp 8">
+</head>
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Configure\nSecurity\nAttack Defense\nAD Example\nAD Example 1");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("preface.htm", "", "&gt;", "Root", "preface.html");
+document.write("<a href=\"mainpage.html\">Configure<\/a> &gt; <a href=\"config_policy_intro.html\">Security<\/a> &gt; <a href=\"ad_intro.html\">Attack Defense<\/a> &gt; <a href=\"ad_sample_land.html\">AD Example<\/a> &gt; AD Example 1<\/p>");
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("preface.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+//-->
+//]]></script><style type="text/css">.whtbtnshow{font-family:;font-size:10pt;font-style:;font-weight:;text-decoration:;color:;}</style><table width="100%"><tbody><tr><td width="33%"><div align="left"><table cellpadding="2" cellspacing="0" border="0"><tbody><tr><td><a title="Show Navigation Component" class="whtbtnshow" href="javascript:void(0);" onclick="show();return false;">Show</a>&nbsp;</td></tr></tbody></table></div></td></tr></tbody></table><p style="text-align:right"> <a style="" href="https://www.hillstonenet.com/support/5.0/en/preface.html">Root</a> &gt; <a href="https://www.hillstonenet.com/support/5.0/en/mainpage.html">Configure</a> &gt; <a href="https://www.hillstonenet.com/support/5.0/en/config_policy_intro.html">Security</a> &gt; <a href="https://www.hillstonenet.com/support/5.0/en/ad_intro.html">Attack Defense</a> &gt; <a href="https://www.hillstonenet.com/support/5.0/en/ad_sample_land.html">AD Example</a> &gt; AD Example 1</p>
+<h2>Land Attack Defense Configuration Example</h2>
+<p>This section describes a Land attack defense configuration example.</p>
+<p>Ethernet 0/0 is bound to the trust zone, ethernet 0/2 is bound to the untrust zone, and ethernet 0/1 is bound to the DMZ zone. Protect the server in the DMZ zone against Land attacks.</p>
+<p>The defense networking topology is shown as follows:</p>
+<p><img src="./Land Attack Defense Configuration Example_files/ad_exam_land.jpg" width="414" height="327" alt=""></p>
+<p>Take the following steps:</p>
+<p><strong>Step 1</strong>: Configure ethernet0/0, ethernet0/2 and ethernet0/1.</p>
+<ol>
+<li>On the Navigation pane, click <strong>Configure</strong> &gt; <strong>Network</strong> &gt; <strong>Network</strong> to visit the Network page.</li>
+<li>Select <strong>ethernet0/0</strong> from the interface list, and click <strong>Edit</strong>. In the Interface Configuration dialog, configure the options as below:
+<ul>
+<li><strong>Name</strong>: ethernet0/0</li>
+<li><strong>Binding zone</strong>: Layer 3 zone</li>
+<li><strong>Zone</strong>: Select <strong>trust</strong> from the <strong>Zone</strong> list.</li>
+</ul>
+</li>
+</ol>
+<ol start="3">
+<li>Click <strong>OK</strong> to save the changes and return to the main page.</li>
+<li>Select <strong>ethernet0/2</strong> from the interface list, and click <strong>Edit</strong>. In the Interface Configuration dialog, configure the options as below:
+<ul>
+<li><strong>Name</strong>: ethernet0/2</li>
+<li><strong>Binding zone</strong>: Layer 3 zone</li>
+<li><strong>Zone</strong>: Select <strong>untrust</strong> from the drop-down list.</li>
+<li><strong>Type</strong>: Static IP</li>
+<li><strong>IP address</strong>: 202.1.0.1</li>
+<li><strong>Netmask</strong>: 24</li>
+</ul>
+</li>
+</ol>
+<ol start="6">
+<li>Click <strong>OK</strong> to save the changes and return to the main page.</li>
+<li>Select <strong>ethernet0/1</strong> from the interface list, and click <strong>Edit</strong>. In the Interface Configuration dialog, configure the options as below:
+<ul>
+<li><strong>Name</strong>: ethernet0/1</li>
+<li><strong>Binding zone</strong>: Layer 3 zone</li>
+<li><strong>Zone</strong>: Select <strong>dmz</strong> from the drop-down list.</li>
+<li><strong>Type</strong>: Static IP</li>
+<li><strong>IP</strong>: 10.0.0.1</li>
+<li><strong>Netmask</strong>: 8</li>
+</ul>
+</li>
+</ol>
+<ol start="6">
+<li>Click <strong>OK</strong> to save the changes and return to the main page.</li>
+</ol>
+<p><strong>Step 2</strong>: Configure a policy rule.</p>
+<ol>
+<li>On the Navigation pane, click <strong>Configure</strong> &gt; <strong>Security</strong> &gt; <strong>Policy</strong> to visit the Policy page.</li>
+<li>Click <strong>New</strong>. On the <strong>Basic</strong> tab in the Policy Configuration dialog, configure the options as below:
+<ul>
+<li><strong>Src zone</strong>: untrust</li>
+<li><strong>Dst zone</strong>: dmz</li>
+<li><strong>Src address</strong>: Any</li>
+<li><strong>Dst address</strong>: Any</li>
+<li><strong>Service</strong>: Any</li>
+<li><strong>Action</strong>: Permit</li>
+</ul>
+</li>
+</ol>
+<ol start="3">
+<li>Click <strong>OK</strong> to save the settings and return to the main page.</li>
+</ol>
+<p><strong>Step 3</strong>: Enable Land attack defense for the untrust zone.</p>
+<ol>
+<li>On the Navigation pane, click <strong>Configure</strong> &gt;<strong>Security</strong> &gt; <strong>Attack Defense</strong> to visit the Attack Defense page.</li>
+<li>Select <strong>untrus</strong>t from the <strong>Zone</strong> drop-down list.</li>
+<li>In the Denial of service defense section, select the <strong>Land attack</strong> check box to enable Land attack defense, and select <strong>Drop</strong> from the <strong>Action</strong> drop-down list.</li>
+<li>Click <strong>OK</strong> to save the changes and return to the main page.</li>
+</ol>
+<p><strong>Step 4</strong>: Test the Land attack defense configured for the server. Craft a packet with identical source and destination IP address, and send it to 10.110.1.1. The device will detect a Land attack, and then give an alarm and drop the packet.</p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+
+
+</body></html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0057)https://www.hillstonenet.com/support/5.0/en/ad_intro.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Introduction to Attack Defense</title>
+<link href="./Introduction to Attack Defense_files/helpstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="./Introduction to Attack Defense_files/whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="./Introduction to Attack Defense_files/whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="./Introduction to Attack Defense_files/whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="./Introduction to Attack Defense_files/whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="./Introduction to Attack Defense_files/whlang.js"></script>
+<script type="text/javascript" language="javascript1.2" src="./Introduction to Attack Defense_files/whtopic.js"></script>
+
+ <meta name="generator" content="Adobe RoboHelp 8">
+</head>
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Configure\nSecurity\nAttack Defense\nIntroduction to AD");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("preface.htm", "", "&gt;", "Root", "preface.html");
+document.write("<a href=\"mainpage.html\">Configure<\/a> &gt; <a href=\"config_policy_intro.html\">Security<\/a> &gt; <a href=\"ad_intro.html\">Attack Defense<\/a> &gt; Introduction to AD<\/p>");
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("preface.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+//-->
+//]]></script><style type="text/css">.whtbtnshow{font-family:;font-size:10pt;font-style:;font-weight:;text-decoration:;color:;}</style><table width="100%"><tbody><tr><td width="33%"><div align="left"><table cellpadding="2" cellspacing="0" border="0"><tbody><tr><td><a title="Show Navigation Component" class="whtbtnshow" href="javascript:void(0);" onclick="show();return false;">Show</a>&nbsp;</td></tr></tbody></table></div></td></tr></tbody></table><p style="text-align:right"> <a style="" href="https://www.hillstonenet.com/support/5.0/en/preface.html">Root</a> &gt; <a href="https://www.hillstonenet.com/support/5.0/en/mainpage.html">Configure</a> &gt; <a href="https://www.hillstonenet.com/support/5.0/en/config_policy_intro.html">Security</a> &gt; <a href="https://www.hillstonenet.com/support/5.0/en/ad_intro.html">Attack Defense</a> &gt; Introduction to AD</p>
+<h2>Introduction to Attack Defense</h2>
+<p>There are various inevitable attacks in networks, such as compromise or sabotage of servers, sensitive data theft, service intervention, or even direct network device sabotage that causes service anomaly or interruption. Security gates, belonging to a category of network security devices, must be designed with attack defense functions to detect various types of network attacks, and take appropriate actions to protect Intranet against malicious attacks, thus assuring the normal operation of the Intranet and systems.</p>
+<p>System provides attack defense functions based on security zones, and can take appropriate actions against network attacks to assure the security of your network systems.</p>
+<h4>IP Address Spoofing</h4>
+<p>IP address spoofing is a technology used to gain unauthorized accesses to computers. An attacker sends packets with a forged IP address to a computer, and the packets are disguised as if they were from a real host. For applications that implement validation based on IP addresses, such an attack allows unauthorized users to gain access to the attacked system. The attacked system might be compromised even if the response packets cannot reach the attacker.</p>
+<h4>Land Attack</h4>
+<p>During a Land attack, an attacker will carefully craft a packet and set its source and destination address to the address of the server that will be attacked. In such a condition the attacked server will send a message to its own address, and this address will also return a response and establish a Null connection. Each of such connections will be maintained until timeout. Many servers will crash under Land attacks.</p>
+<h4>Smurf Attack</h4>
+<p>Smurf attacks consist of two types: basic attack and advanced attack. A basic Smurf attack is used to attack a network by setting the destination address of ICMP ECHO packets to the broadcast address of the attacked network. In such a condition all the hosts within the network will send their own response to the ICMP request, leading to network congestion. An advanced Smurf attack is mainly used to attack a target host by setting the source address of ICMP ECHO packets to the address of the attacked host, eventually leading to host crash. Theoretically, the more hosts in a network, the better the attacking effect will be.</p>
+<h4>Fraggle Attack</h4>
+<p>A fraggle attack is basically the same with a smurf attack. The only difference is the attacking vector of fraggle is UDP packets.</p>
+<h4>WinNuke Attack</h4>
+<p>A WinNuke attack sends OOB (out-of-band) packets to the NetBIOS port (139) of a Windows system, leading to NetBIOS fragment overlap and host crash. Another attacking vector is ICMP fragment. Generally an ICMP packet will not be fragmented; so many systems cannot properly process ICMP fragments. If your system receives any ICMP fragment, it's almost certain that the system is under attack.</p>
+<h4>SYN Flood</h4>
+<p>Due to resource limitations, a server will only permit a certain number of TCP connections. SYN Flood just makes use of this weakness. During the attack an attacker will craft a SYN packet, set its source address to a forged or non-existing address, and initiate a connection to a server. Typically the server should reply the SYN packet with SYN-ACK, while for such a carefully crafted SYN packet, the client will not send any ACK for the SYN-ACK packet, leading to a half-open connection. The attacker can send large amount of such packets to the attacked host and establish equally large number of half-open connections until timeout. As a result, resources will be exhausted and normal accesses will be blocked. In the environment of unlimited connections, SYN Flood will exhaust all the available memory and other resources of the system.</p>
+<h4>ICMP Flood and UDP Flood</h4>
+<p>An ICMP Flood/UDP Flood attack sends huge amount of ICMP messages (such as ping)/UDP packets to a target within a short period and requests for response. Due to the heavy load, the attacked target cannot complete its normal transmission task.</p>
+<h4>IP Address Sweep and Port Scan</h4>
+<p>This kind of attack makes a reconnaissance of the destination address and port via scanners, and determines the existence from the response. By IP address sweep or port scan, an attacker can determine which systems are alive and connected to the target network, and which ports are used by the hosts to provide services.</p>
+<h4>Ping of Death Attack</h4>
+<p>Ping of Death is designed to attack systems by some over-sized ICMP packets. The field length of an IP packet is 16 bits, which means the max length of an IP packet is 65535 bytes. For an ICMP response packet, if the data length is larger than 65507 bytes, the total length of ICMP data, IP header (20 bytes) and ICMP header (8 bytes) will be larger than 65535 bytes. Some routers or systems cannot properly process such a packet, and might result in crash, system down or reboot.</p>
+<div class="topiclink">
+<p><strong>Related Topics</strong>:</p>
+<p><img src="./Introduction to Attack Defense_files/black_right_sm.jpg" width="9" height="10" alt=""> <a href="https://www.hillstonenet.com/support/5.0/en/ad_config.html">Configuring Attack Defense</a></p>
+</div>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+
+
+</body></html>

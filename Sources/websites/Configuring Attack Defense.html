@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0058)https://www.hillstonenet.com/support/5.0/en/ad_config.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Configuring Attack Defense</title>
+<link href="./Configuring Attack Defense_files/helpstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="./Configuring Attack Defense_files/whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="./Configuring Attack Defense_files/whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="./Configuring Attack Defense_files/whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="./Configuring Attack Defense_files/whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="./Configuring Attack Defense_files/whlang.js"></script>
+<script type="text/javascript" language="javascript1.2" src="./Configuring Attack Defense_files/whtopic.js"></script>
+
+ <meta name="generator" content="Adobe RoboHelp 8">
+</head>
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Configure\nSecurity\nAttack Defense\nConfiguring AD");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("preface.htm", "", "&gt;", "Root", "preface.html");
+document.write("<a href=\"mainpage.html\">Configure<\/a> &gt; <a href=\"config_policy_intro.html\">Security<\/a> &gt; <a href=\"ad_intro.html\">Attack Defense<\/a> &gt; Configuring AD<\/p>");
+
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("preface.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+//-->
+//]]></script><style type="text/css">.whtbtnshow{font-family:;font-size:10pt;font-style:;font-weight:;text-decoration:;color:;}</style><table width="100%"><tbody><tr><td width="33%"><div align="left"><table cellpadding="2" cellspacing="0" border="0"><tbody><tr><td><a title="Show Navigation Component" class="whtbtnshow" href="javascript:void(0);" onclick="show();return false;">Show</a>&nbsp;</td></tr></tbody></table></div></td></tr></tbody></table><p style="text-align:right"> <a style="" href="https://www.hillstonenet.com/support/5.0/en/preface.html">Root</a> &gt; <a href="https://www.hillstonenet.com/support/5.0/en/mainpage.html">Configure</a> &gt; <a href="https://www.hillstonenet.com/support/5.0/en/config_policy_intro.html">Security</a> &gt; <a href="https://www.hillstonenet.com/support/5.0/en/ad_intro.html">Attack Defense</a> &gt; Configuring AD</p>
+<h2>Configuring Attack Defense</h2>
+<p>To configure Attack Defense, take the following steps:</p>
+<ol>
+<li>On the Navigation pane, click <strong>Configure</strong> &gt; <strong>Security</strong> &gt; <strong>Attack Defense</strong> to visit the Attack Defense page.</li>
+<li>Select a security zone for Attack Defense from the <strong>Zone</strong> drop-down list.</li>
+<li>To enable all the Attack Defense functions for the security zone, select the <strong>Enable all</strong> check box, and also select an action from the <strong>Action</strong> drop-down list. To enable an individual defense function, select its corresponding check box.</li>
+<li>Configure parameters for the selected functions.</li>
+<li>Click <strong>OK</strong> to save the changes.</li>
+</ol>
+<p>Options for Attack Defense are described in detail as follows:</p>
+<hr align="left" width="100%" size="1" noshade="noshade">
+<h4>Select a zone</h4>
+<p class="pindent"><strong>Zone</strong>: Select a security zone for Attack Defense from the <strong>Zone</strong> list.</p>
+<hr align="left" width="100%" size="1" noshade="noshade">
+<h4>Select all</h4>
+<div class="pindent">
+<p><strong>Enable all</strong>: Select this check box to enable all the Attack Defense functions for the security zone.</p>
+<p><strong>Action</strong>: Specifies an action for all the Attack Defense functions, i.e., the defense measure the system will take if any attack has been detected.</p>
+<ul>
+<li><strong>Drop</strong> - Drops packets. This is the default action.</li>
+<li><strong>Alarm</strong> - Gives an alarm but still permits packets to pass through.</li>
+</ul>
+</div>
+<hr align="left" width="100%" size="1" noshade="noshade">
+<h4>Flood defense</h4>
+<div class="pindent">
+<p><strong>ICMP flood</strong>: Select this check box to enable ICMP flood defense for the security zone.</p>
+<ul>
+<li><strong>Threshold</strong> - Specifies a threshold for inbound ICMP packets. If the number of inbound ICMP packets destined to one single IP address per second exceeds the threshold, system will identify the traffic as an ICMP flood and take the specified action. The value range is 1 to 50000. The default value is 1500.</li>
+<li><strong>Action</strong> - Specifies an action for ICMP flood attacks. If the default action <strong>Drop</strong> is selected, system will only permit the specified number (threshold) of IMCP packets to pass through during the current and the next second, and also give an alarm. All the excessive packets of the same type will be dropped during this period.</li>
+</ul>
+<p><strong>UDP flood</strong>: Select this check box to enable UDP flood defense for the security zone.</p>
+<ul>
+<li><strong>Src threshold</strong> - Specifies a threshold for outbound UDP packets. If the number of outbound UDP packets originating from one single source IP address per second exceeds the threshold, system will identify the traffic as a UDP flood and take the specified action. The value range is 1 to 50000. The default value is 1500.</li>
+<li><strong>Dst threshold</strong> - Specifies a threshold for inbound UDP packets. If the number of inbound UDP packets destined to one single port of one single destination IP address per second exceeds the threshold, system will identify the traffic as a UDP flood and take the specified action. The value range is 1 to 50000. The default value is 1500.</li>
+<li><strong>Action</strong> - Specifies an action for UDP flood attacks. If the default action <strong>Drop</strong> is selected, system will only permit the specified number (threshold) of UDP packets to pass through during the current and the next second, and also give an alarm. All the excessive packets of the same type will be dropped during this period.</li>
+</ul>
+<p><strong>ARP spoofing</strong>: Select this check box to enable ARP spoofing defense for the security zone.</p>
+<ul>
+<li><strong>Max IP number per MAC</strong> - Specifies whether system will check the IP number per MAC in ARP table. If the parameter is set to 0, system will not check the IP number; if set to a value other than 0, system will check the IP number, and if the IP number per MAC is larger than the parameter value, system will take the specified action. The value range is 0 to 1024.</li>
+<li><strong>Reverse query</strong> - Select this check box to enable Reverse query. When system receives an ARP request, it will log the IP address and reply with another ARP request; and then system will check if any packet with a different MAC address will be returned, or if the MAC address of the returned packet is the same as that of the ARP request packet.</li>
+<li><strong>Gratuitous ARP send rate</strong> - Specifies if system will send gratuitous ARP packet(s). If the parameter is set to 0 (the default value), system will not send any gratuitous ARP packet; if set to a value other than 0, system will send gratuitous ARP packet(s), and the number sent per second is the specified parameter value. The value range is 0 to 10.</li>
+</ul>
+<p><strong>SYN flood</strong>: Select this check box to enable SYN flood defense for the security zone.</p>
+<ul>
+<li><strong>Src threshold</strong> - Specifies a threshold for outbound SYN packets (ignoring the destination IP address and port number). If the number of outbound SYN packets originating from one single source IP address per second exceeds the threshold, system will identify the traffic as a SYN flood. The value range is 0 to 50000. The default value is 1500. The value of 0 indicates the Src threshold is void.</li>
+<li><strong>Dst threshold</strong> - Specifies a threshold for inbound SYN packets. If the number of inbound SYN packets destined to one single destination IP address per second exceeds the threshold, system will identify the traffic as a SYN flood. The value range is 0 to 50000. The default value is 1500. The value of 0 indicates the Dst threshold is void.</li>
+<li><strong>Action</strong> - Specifies an action for SYN flood attacks. If the default action <strong>Drop</strong> is selected, system will only permit the specified number (threshold) of SYN packets to pass through during the current and the next second, and also give an alarm. All the excessive packets of the same type will be dropped during this period. Besides if Src threshold and Dst threshold are also configured, system will first detect if the traffic is a destination SYN flood attack: if so, system will drop the packets and give an alarm, if not, system will continue to detect if the traffic is a source SYN attack; if so, system will drop the packets and give an alarm.</li>
+</ul>
+</div>
+<hr align="left" width="100%" size="1" noshade="noshade">
+<h4>MS-Windows defense</h4>
+<p class="pindent"><strong>WinNuke attack</strong>: Select this check box to enable WinNuke attack defense for the security zone. If any WinNuke attack has been detected, system will drop the packets and give an alarm.</p>
+<hr align="left" width="100%" size="1" noshade="noshade">
+<h4>Scan/spoof defense</h4>
+<div class="pindent">
+<p><strong>IP address spoof</strong>: Select this check box to enable IP address spoof defense for the security zone. If any IP address spoof attack has been detected, system will drop the packets and give an alarm.</p>
+<p><strong>IP address sweep</strong>: Select this check box to enable IP address sweep defense for the security zone.</p>
+<ul>
+<li><strong>Threshold</strong> - Specifies a time threshold for IP address sweep. If over 10 ICMP packets from one single source IP address are sent to different hosts within the period specified by the threshold, system will identify them as an IP address sweep attack. The value range is 1 to 5000 milliseconds. The default value is 1.</li>
+<li><strong>Action</strong> - Specifies an action for IP address sweep attacks. If the default action <strong>Drop</strong> is selected, system will only permit 10 IMCP packets originating from one single source IP address while destined to different hosts to pass through during the specified period (threshold), and also give an alarm. All the excessive packets of the same type will be dropped during this period.</li>
+</ul>
+<p><strong>Port scan</strong>: Select this check box to enable port scan defense for the security zone.</p>
+<ul>
+<li><strong>Threshold</strong> - Specifies a time threshold for port scan. If over 10 TCP SYN packets are sent to different ports of one single destination address within the period specified by the threshold, system will identify them as a port scan attack. The value range is 1 to 5000 milliseconds. The default value is 1.</li>
+<li><strong>Action</strong> - Specifies an action for port scan attacks. If the default action <strong>Drop</strong> is selected, system will only permit 10 TCP SYN packets destined to different ports of one single destination address to pass through, and also give an alarm. All the excessive packets of the same type will be dropped during this period.</li>
+</ul>
+</div>
+<hr align="left" width="100%" size="1" noshade="noshade">
+<h4>Denial of service defense</h4>
+<div class="pindent">
+<p><strong>Ping of Death attack</strong>: Select this check box to enable Ping of Death attack defense for the security zone. If any Ping of Death attack has been attacked, system will drop the attacking packets, and also give an alarm.</p>
+<p><strong>Teardrop attack</strong>: Select this check box to enable Teardrop attack defense for the security zone. If any Teardrop attack has been attacked, system will drop the attacking packets, and also give an alarm.</p>
+<p><strong>IP fragment</strong>: Select this check box to enable IP fragment defense for the security zone.</p>
+<ul>
+<li><strong>Action</strong> - Specifies an action for IP fragment attacks. The default action is <strong>Drop</strong>.</li>
+</ul>
+<p><strong>IP option</strong>: Select this check box to enable IP option attack defense for the security zone. system will defend against the following types of IP options: Security, Loose Source Route, Record Route, Stream ID, Strict Source Route and Timestamp.</p>
+<ul>
+<li><strong>Action</strong> - Specifies an action for IP option attacks. The default action is <strong>Drop</strong>.</li>
+</ul>
+<p><strong>Smurf or fraggle attack</strong>: Select this check box to enable Smurf or fraggle attack defense for the security zone.</p>
+<ul>
+<li><strong>Action</strong> - Specifies an action for Smurf or fraggle attacks. The default action is <strong>Drop</strong>.</li>
+</ul>
+<p><strong>Land attack</strong>: Select this check box to enable Land attack defense for the security zone.</p>
+<ul>
+<li><strong>Action</strong> - Specifies an action for Land attacks. The default action is <strong>Drop</strong>.</li>
+</ul>
+<p><strong>Large ICMP packet</strong>: Select this check box to enable large ICMP packet defense for the security zone.</p>
+<ul>
+<li><strong>Threshold</strong> - Specifies a size threshold for ICMP packets. If the size of any inbound ICMP packet is larger than the threshold, system will identify it as a large ICMP packet and take the specified action. The value range is 1 to 50000 bytes. The default value is 1024.</li>
+<li><strong>Action</strong> - Specifies an action for large ICMP packet attacks. The default action is <strong>Drop</strong>.</li>
+</ul>
+</div>
+<hr align="left" width="100%" size="1" noshade="noshade">
+<h4>Proxy</h4>
+<div class="pindent">
+<p><strong>SYN proxy</strong>: Select this check box to enable SYN proxy for the security zone. SYN proxy is designed to defend against SYN flood attacks in combination with SYN flood defense. When both SYN flood defense and SYN proxy are enabled, SYN proxy will act on the packets that have already passed detections for SYN flood attacks.</p>
+<ul>
+<li><strong>Proxy trigger rate</strong> - Specifies a min number for SYN packets that will trigger SYN proxy or SYN-Cookie (if the <strong>Cookie</strong> check box is selected). If the number of inbound SYN packets destined to one single port of one single destination IP address per second exceeds the specified value, system will trigger SYN proxy or SYN-Cookie. The value range is 1 to 50000. The default value is 1000.</li>
+<li><strong>Cookie</strong> - Select this check box to enable SYN-Cookie. SYN-Cookie is a stateless SYN proxy mechanism that enables system to enhance its capacity of processing multiple SYN packets. Therefore, you are advised to expand the range between "Proxy trigger rate" and "Max SYN packet rate" appropriately.</li>
+<li><strong>Max SYN packet rate</strong> - Specifies a max number for SYN packets that are permitted to pass through per second by SYN proxy or SYN-Cookie (if the <strong>Cookie</strong> check box is selected). If the number of inbound SYN packets destined to one single port of one single destination IP address per second exceeds the specified value, system will only permit the specified number of SYN packets to pass through during the current and the next second. All the excessive packets of the same type will be dropped during this period. The value range is 1 to 1500000. The default value is 3000.</li>
+<li><strong>Timeout</strong> - Specifies a timeout for half-open connections. The half-open connections will be dropped after timeout. The value range is 1 to 180 seconds. The default value is 30.</li>
+</ul>
+</div>
+<hr align="left" width="100%" size="1" noshade="noshade">
+<h4>Protocol anomaly report</h4>
+<div class="pindent">
+<p><strong>TCP option anomaly</strong>: Select this check box to enable TCP option anomaly defense for the security zone.</p>
+<ul>
+<li><strong>Action</strong> - Specifies an action for TCP option anomaly attacks. The default action is <strong>Drop</strong>.</li>
+</ul>
+</div>
+<hr align="left" width="100%" size="1" noshade="noshade">
+<h4>DNS query flood</h4>
+<div class="pindent">
+<p><strong>DNS query flood</strong>: Select this check box to enable DNS query flood defense for the security zone.</p>
+<ul>
+<li><strong>Threshold</strong> - Specifies a threshold for inbound DNS query packets. If the number of inbound DNS query packets destined to one single port of one single IP address per second exceeds the threshold, system will identify the traffic as a DNS query flood and take the specified action. The value range is 1 to 50000. The default value is 1500.</li>
+<li><strong>Action</strong> - Specifies an action for DNS query flood attacks. If the default action <strong>Drop</strong> is selected, system will only permit the specified number (threshold) of DNS query packets to pass through during the current and next second, and also give an alarm. All the excessive packets of the same type will be dropped during this period; if <strong>Alarm</strong> is selected, system will give an alarm but still permit the DNS query packets to pass through.</li>
+</ul>
+<p><strong>Recursive DNS query flood</strong>: Select this check box to enable recursive DNS query flood defense for the security zone.</p>
+<ul>
+<li><strong>Threshold</strong> - Specifies a threshold for inbound recursive DNS query packets. If the number of inbound recursive DNS query packets destined to one single port of one single IP address per second exceeds the threshold, system will identify the traffic as a recursive DNS query flood and take the specified action. The value range is 0 to 50000. The default value is 1000. The value of 0 indicates no recursive DNS query packet is permitted.</li>
+<li><strong>Action</strong> - Specifies an action for recursive DNS query flood attacks. If the default action <strong>Drop</strong> is selected, system will only permit the specified number (threshold) of recursive DNS query packets to pass through during the current and next second, and also give an alarm. All the excessive packets of the same type will be dropped during this period; if <strong>Alarm</strong> is selected, system will give an alarm but still permit the recursive DNS query packets to pass through.</li>
+</ul>
+</div>
+<div class="topiclink">
+<p><strong>Related Topics:</strong></p>
+<p><img src="./Configuring Attack Defense_files/black_right_sm.jpg" width="9" height="10" alt=""> <a href="https://www.hillstonenet.com/support/5.0/en/ad_sample_land.html">Land Attack Defense Configuration Example</a></p>
+<p><img src="./Configuring Attack Defense_files/black_right_sm.jpg" width="9" height="10" alt=""> <a href="https://www.hillstonenet.com/support/5.0/en/ad_sample_ip.html">Layer 2 IP Address Spoof Defense Configuration Example</a></p>
+</div>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+
+
+</body></html>

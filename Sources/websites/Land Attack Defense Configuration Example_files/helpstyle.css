@@ -1,0 +1,121 @@
+/* CSS Document */
+
+body {
+	color:#000000;
+	background:#FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:10pt;
+	line-height:150%;
+	padding-left:4px;
+	padding-right:4px;
+	   }
+tbody { 
+       color:#000000; 
+       background:#FFFFFF; 
+       font-family: Verdana, "ËÎÌå"; 
+       font-size:12px;  }
+a:active { 
+          color:#0000FF;  }
+a:visited { 
+           color:#660099; 
+           text-decoration:underline; 
+           color:#660099; 
+           x-text-underline:normal;  }
+a:hover { 
+         color:#009D4F; 
+         text-decoration:underline; 
+         color:#009D4F; 
+         x-text-underline:normal;  }
+h1 { 
+    font-family: "ºÚÌå", Arial;
+	color: #000000; 
+	font-weight: bold;
+	margin-bottom:1em;
+	margin-top: 1em;
+    clear:both;  
+    font-size:18pt; 
+	padding-left:4px;  }
+h2 {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#000000;
+	font-weight: bold;
+	margin-bottom:1em;
+	margin-top: 4px;
+	clear:both;
+	font-size:16pt;
+	padding-left:4px;
+	border-bottom-style: none;
+}
+h4 { 
+    font-family:Arial, Helvetica, sans-serif;
+    color: #000000; 
+	font-weight: bold;
+	margin-bottom: .5em; 
+	margin-top: 1em;
+    clear:both;  
+    font-size: 13pt; 
+	padding-left:4px; }
+h5 { 
+    font-family:Arial, Helvetica, sans-serif; 
+    color: #000000; 
+	font-weight: bold;
+	margin-bottom: .5em; 
+	margin-top: 1em;
+    clear:both;  
+    font-size: 10pt; 
+	padding-left:4px; }
+p { 
+   margin-top: 1em; 
+   margin-bottom: .5em; 
+   padding-left:4px; }
+.pindent { padding-left: 20pt; }
+ol { 
+    margin-top: 1em; 
+    margin-bottom: .5em;  }
+ul {
+    margin-top: 1em; 
+    margin-bottom: .5em;  }
+			
+ul#outside
+			{ 
+				list-style-position: outside;}
+li { margin-bottom:.7em;  }
+
+th { 
+    text-align:Left; 
+    vertical-align:middle; 
+    padding:.2em .2em .2em .2em; }
+td { 
+    vertical-align: middle;  }
+.code { 
+      font-family:Courier New; 
+      font-size:100%;  }
+#th1 { 
+      background-color:#DDDDDD; 
+      border-bottom:1px solid #C2BDB1;  }
+#th2 {
+      background-color: #E2E2E2; 
+      border:1px solid #808080; }
+#bdr { 
+      border-bottom:1px solid #808080;  }
+#celldesc {
+          border:solid 1px #808080;
+		  padding:.2em .2em .2em .2em;  }
+
+.tableborder {
+      border:1px solid #808080; 
+	  margin: 0;
+	  border-collapse:collapse;  }
+
+.note { 
+       background-color: #DDEEFF;
+       padding-left:4px;  }
+.topiclink {
+        	background-color: #FFFFD2;
+	        padding-left:4px;
+                              }
+.tableposition { padding-left: 4px;
+                 position:inherit;  }
+.specialcell {vertical-align:middle}
+
+--div.content_style{display:none;}
